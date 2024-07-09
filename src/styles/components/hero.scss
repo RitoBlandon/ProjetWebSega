@@ -30,9 +30,13 @@
             padding: var(--spacing-sm) 0 32px 0;
             width: 35vw;
             color: var(--color-white);
-            p {
-                font-family: 'Yellowtail';
+            .hero_slogan {
                 font-size: var(--font-size-h2);
+                margin: 0;
+                padding-bottom: 12px;
+            }
+            .hero_texte {
+                font-size: 28px;
                 margin: 0;
                 padding-bottom: 12px;
             }
