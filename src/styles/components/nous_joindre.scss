@@ -1,0 +1,64 @@
+.nous_joindre {
+    height: 100%;
+    padding: 100px 0;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 140px;
+        @media screen and (max-width: 1200px) {
+            gap: 80px;
+        }
+        @media screen and (max-width: $breakpoint-md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .carte {
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .joindre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+        @media screen and (max-width: $breakpoint-md) {
+            align-items: center;
+        }
+
+        h2 {
+            padding-bottom: 16px;
+        }
+        .info_joindre_ville {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .rejoindre_ville {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .ville_joindre_infos {
+                display: flex;
+                gap: 16px;
+                padding: 20px 0;
+                .titre_info_joindre {
+                    font-size: 25px;
+                    color: var(--color-bleu-dark);
+                    font-weight: bolder;
+                }
+                svg {
+                    background-color: var(--color-gray-background);
+                    padding: var(--spacing-sm);
+                    color: var(--color-primary);
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}

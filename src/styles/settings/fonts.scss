@@ -1,0 +1,18 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Yellowtail', monospace;
+
+    --font-size-content: #{typo(16px, 18px)};
+    --font-size-nav-link: #{typo(14px, 18px)};
+    --font-size-nav-mobile-link: #{typo(24px, 36px)};
+
+    /// Grosseur des textes
+    --font-size-h1: #{typo(48px, 64px)};
+    --font-size-h2: #{typo(24px, 50px)};
+    --font-size-h3: #{typo(20px, 36px)};
+    --font-size-h4: #{typo(20px, 28px)};
+}

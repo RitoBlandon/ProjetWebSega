@@ -1,0 +1,316 @@
+{% include "_partials/_header.html" %}
+
+<!-- Votre contenu ici -->
+
+<section class="hero hero_contact">
+    <div class="hero_media">
+        <img src="assets/images/hero2.jpg" alt="hero_contact" />
+    </div>
+    <div class="wrapper">
+        <div class="hero_content">
+            <div class="info_hero">
+                <p data-scrolly="fade">Nous joindre</p>
+                <h1 data-scrolly="fromLeft">Un paradis entre terre et mer à deux pas de Tadoussac</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="nous_joindre">
+    <div class="wrapper">
+        <div data-scrolly="scale" class="carte"><img src="assets/images/carte.jpg" alt="carte_ville" /></div>
+        <div class="joindre">
+            <div class="infos_lieu_ville">
+                <h2 data-scrolly="fromRight">Pour nous joindre</h2>
+                <div class="info_joindre_ville">
+                    <p data-scrolly="fromLeft">Édifice municipal Albert-Boulianne</p>
+                    <p data-scrolly="fade">308, rue Leclerc</p>
+                    <p data-scrolly="fade">Baie-Sainte-Catherine</p>
+                    <p data-scrolly="fromRight">Québec, G0T 1A0</p>
+                </div>
+            </div>
+            <div class="rejoindre_ville">
+                <div class="ville_joindre_infos">
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-courriel"></use>
+                    </svg>
+                    <div class="info_courriel">
+                        <p class="titre_info_joindre">Courriel</p>
+                        <p class="courriel">municipalite@baiestecatherine.com</p>
+                    </div>
+                </div>
+                <div class="ville_joindre_infos">
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-telephone"></use>
+                    </svg>
+                    <div class="info_telephone">
+                        <p class="titre_info_joindre">Téléphone</p>
+                        <p class="telephone">418-620-5020</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reseaux_joindre">
+                <ul class="reseaux-sociaux">
+                    <li>
+                        <a data-scrolly="rotate" class="nav-icon" href="https://www.instagram.com/" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-scrolly="rotate" class="nav-icon" href="https://dribbble.com/" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-dribble"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-scrolly="rotate" class="nav-icon" href="https://twitter.com/home?lang=fr" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-scrolly="rotate" class="nav-icon" href="https://www.youtube.com/watch?v=8hFiVvMGJwQ" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="formulaire">
+    <div class="wrapper">
+        <form action="" class="form" autocomplete="off" data-component="Form">
+            <div class="form_body">
+                <h4>Informations personelles</h4>
+                <fieldset class="grid_form">
+                    <div class="input">
+                        <label data-scrolly="fromLeft" class="input_label" for="name">Votre nom*</label>
+                        <input data-scrolly="fromLeft" class="input_element" type="text" name="name" id="name" placeholder="ex: Jean Gautier" required />
+                        <p class="text_error">Vous devez remplir ce champ</p>
+                    </div>
+                    <div class="input">
+                        <label data-scrolly="fromRight" class="input_label" for="email">Adresse courriel*</label>
+                        <input data-scrolly="fromRight" class="input_element" type="text" name="email" id="email" placeholder="exemple@domaine.com" required />
+                        <p class="text_error">Vous devez remplir ce champ</p>
+                    </div>
+                    <div class="input u-grid-fullwidth">
+                        <label data-scrolly="fromRight" class="input_label" for="phone">Adresse*</label>
+                        <input
+                            data-scrolly="fromRight"
+                            class="input_element"
+                            type="text"
+                            name="adresse"
+                            id="adresse"
+                            placeholder="2020, rue du Finfin"
+                            required
+                        />
+                        <p class="text_error">Vous devez remplir ce champ</p>
+                    </div>
+                    <div class="input">
+                        <label data-scrolly="fromBottom" class="input_label" for="phone">Ville*</label>
+                        <input data-scrolly="fromRight" class="input_element" type="text" name="adresse" id="ville" placeholder="Longueil" required />
+                        <p class="text_error">Vous devez remplir ce champ</p>
+                    </div>
+                    <div class="input">
+                        <label data-scrolly="fromRight" class="input_label" for="code_postale">Code postale*</label>
+                        <input data-scrolly="from" class="input_element" type="text" name="code_postal" id="code_postal" placeholder="J3H 092" required />
+                        <p class="text_error">Vous devez remplir ce champ</p>
+                    </div>
+                    <div class="input select">
+                        <label data-scrolly="fade" class="input_label" for="province">Province*</label>
+                        <select class="input_element" name="province" id="province" required>
+                            <p class="text_error">Vous devez remplir ce champ</p>
+                            <option value="" hidden>Choisir une province</option>
+                            <option value="qc">Québec</option>
+                            <option value="on">Ontario</option>
+                            <option value="al">Alberta</option>
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <label data-scrolly="fromLeft" class="input_label" for="phone">Numro de téléphone*</label>
+                        <input data-scrolly="fromLeft" class="input_element" type="tel" name="phone" id="phone" placeholder="555 666-777" required />
+                        <p class="text_error">Vous devez remplir ce champ</p>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grid_form_2 fieldset2">
+                    <div class="methode_joindre" data-input-container>
+                        <div class="input radio">
+                            <input type="radio" id="contact1" name="contact[]" value="type contact" class="input_element" required />
+
+                            <label class="input_label" for="contact1">Courriel</label>
+                            <p class="text_error">Vous devez remplir ce champ</p>
+                        </div>
+                        <div class="input radio">
+                            <input type="radio" id="contact2" name="contact[]" value="type contact" class="input_element" required />
+
+                            <label class="input_label" for="contact2">Téléphone</label>
+                            <p class="text_error">Vous devez remplir ce champ</p>
+                        </div>
+                    </div>
+
+                    <h4>Requête citoyenne</h4>
+                    <div class="input select">
+                        <label data-scrolly="fromLeft" class="input_label" for="sujet_requete">Sujet*</label>
+                        <select class="input_element" name="province" id="sujet_requete" required>
+                            <option value="stationnement">Permis de stationnement</option>
+                            <option value="renseignement">Demande de renseignements</option>
+                            <option value="reservation">Réservation de salle</option>
+                        </select>
+                        <p class="text_error">Vous devez remplir ce champ</p>
+                    </div>
+
+                    <div class="input textarea u-grid-fullwidth">
+                        <label data-scrolly="fromRight" class="input_label" for="comment">Commentaire *</label>
+
+                        <textarea
+                            data-scrolly="fade"
+                            class="input_element"
+                            name="comment"
+                            id="comment"
+                            placeholder="Inscrire vitre message"
+                            required
+                        ></textarea>
+                        <p class="text_error">Vous devez remplir ce champ</p>
+                    </div>
+                    <p>Méthode pour vous joindre*</p>
+                    <div class="input checkbox">
+                        <input type="checkbox" id="optin" name="optin[]" value="true" class="input_element" />
+                        <label data-scrolly="fromRight" class="input_label" for="optin">J'accepte les conditions d'utilisation.</label>
+                    </div>
+                </fieldset>
+                <footer class="footer_form">
+                    <button data-scrolly="fromBottom" class="bouton bouton_form_footer">
+                        Envoyer
+
+                        <svg class="icon icon--xs icone-fleche">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </button>
+                </footer>
+            </div>
+            <div class="form_confirmation">
+                <h2 data-scrolly="fromLeft">Merci</h2>
+                <p data-scrolly="fromRight">Votre formulaire a bien été envoyé</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="faq" data-component="Accordion">
+    <div class="wrapper">
+        <div class="titre_faq">
+            <h3 data-scrolly="fromLeft">Questions fréquentes</h3>
+            <h2 data-scrolly="fromBottom">Connaissez-nous mieux</h2>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion__container js-accordion">
+                <div class="accordion__header" data-scrolly="fromRight">
+                    Quelle est la population de la MRC de Baie Ste-Catherine?
+                    <div class="accordion__icon">
+                        <div class="plus">
+                            <span class="bar_accordion"></span>
+                            <span class="bar_accordion"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__content">Selon le recensement de 2016, la population de la MRC de Baie Ste-Catherine est de 3 229 habitants.</div>
+            </div>
+            <div class="accordion__container js-accordion">
+                <div class="accordion__header" data-scrolly="fromRIght">
+                    Qu'est-ce que la MRC de Baie Ste-Catherine?
+                    <div class="accordion__icon">
+                        <div class="plus">
+                            <span class="bar_accordion"></span>
+                            <span class="bar_accordion"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__content">
+                    La MRC de Baie Ste-Catherine est une municipalité régionale de comté située dans la région administrative de la Côte-Nord au Québec, Canada.
+                </div>
+            </div>
+            <div class="accordion__container js-accordion" data-auto-open>
+                <div class="accordion__header" data-scrolly="fromLeft">
+                    Quels sont les meilleures activitées pour touristes ?
+                    <div class="accordion__icon">
+                        <div class="plus">
+                            <span class="bar_accordion"></span>
+                            <span class="bar_accordion"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__content">Les principales activité de la MRC de Baie Ste-Catherine sont la pêche, les paysage et l'architecture.</div>
+            </div>
+            <div class="accordion__container js-accordion" data-auto-open>
+                <div class="accordion__header" data-scrolly="fromRight">
+                    Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?
+                    <div class="accordion__icon">
+                        <div class="plus">
+                            <span class="bar_accordion"></span>
+                            <span class="bar_accordion"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__content">
+                    La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une destination populaire pour les excursions
+                    d'observation des baleines. Elle compte également de nombreux sentiers de randonnée, des plages, des musées et des festivals tout au long de
+                    l'année.
+                </div>
+            </div>
+            <div class="accordion__container js-accordion">
+                <div class="accordion__header" data-scrolly="fromLeft">
+                    Quels sont les projets en cours dans la MRC de Baie Ste-Catherine?
+                    <div class="accordion__icon">
+                        <div class="plus">
+                            <span class="bar_accordion"></span>
+                            <span class="bar_accordion"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__content">
+                    La MRC de Baie Ste-Catherine travaille actuellement sur plusieurs projets, notamment le développement d'un parc industriel et l'amélioration
+                    des infrastructures de transport.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="videos_promo">
+    <div class="wrapper">
+        <h3 data-scrolly="fromTop">Vidéos</h3>
+        <h2>La ville en mouvement</h2>
+        <div class="videos_ville">
+            <div class="video" data-component="Youtube" data-video-id="zpK4aHvleIY" data-rel>
+                <div class="video__media js-youtube">
+                    <img data-scrolly="fromRight" class="js-poster" src="assets/images/poster1.jpg" alt="Walter" />
+                    <svg class="icon icon--xl">
+                        <use xlink:href="#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="video" data-component="Youtube" data-video-id="mv058RTh754">
+                <div class="video__media js-youtube">
+                    <img data-scrolly="fromLeft" class="js-poster" src="assets/images/poster2.jpg" alt="Walter" />
+                    <div class="cercle">
+                        <svg class="icon icon--xl">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "_partials/_footer.html" %}

@@ -1,0 +1,72 @@
+/* ==========================================================================
+   scrolly / component
+   ========================================================================== */
+.has-js {
+    [data-scrolly='fromBottom'] {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.4s $ease-out-expo;
+        filter: blur(10px);
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+    }
+
+    [data-scrolly='fromLeft'] {
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 0.4s $ease-out-expo;
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromTop'] {
+        opacity: 0;
+        transform: translateY-(60px);
+        transition: all 0.4s $ease-out-expo;
+        filter: blur(10px);
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        opacity: 0;
+        transform: translateX(60px);
+        transition: all 0.4s $ease-out-expo;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='scale'] {
+        transform: scale(1.3);
+        transition: all 1s $ease-out-expo;
+        &.is-active {
+            transform: scale(1);
+        }
+    }
+
+    [data-scrolly='rotate'] {
+        transform: rotateX(90deg);
+        transition: all 2s $ease-out-expo;
+        &.is-active {
+            transform: rotate(0);
+        }
+    }
+    [data-scrolly='fade'] {
+        opacity: 0;
+        transition: all 2s $ease-out-expo;
+        &.is-active {
+            opacity: 1;
+        }
+    }
+}

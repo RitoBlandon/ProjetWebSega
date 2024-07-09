@@ -1,0 +1,25 @@
+.actu {
+    padding: 100px 0;
+    height: 100%;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .titre-actu {
+            color: var(--color-primary);
+            font-family: 'Yellowtail';
+            font-size: 36px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .entete-section {
+            font-family: 'Roboto';
+            font-size: var(--spacing-lg);
+            font-weight: bolder;
+            margin: 0;
+            padding-bottom: var(--spacing-lg);
+        }
+    }
+}
