@@ -1,0 +1,26 @@
+.presentation {
+    height: 100%;
+    background-color: #00259f;
+    padding-top: 82px;
+    color: var(--color-white);
+
+    .presentation_sega {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        h1 {
+            width: 20vw;
+        }
+        p {
+            padding-top: 15px;
+            width: 20vw;
+        }
+
+        .segadbs_contenu {
+            .sega_texte {
+                padding: 32px 0;
+                width: 60vw;
+            }
+        }
+    }
+}
