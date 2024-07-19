@@ -3,7 +3,7 @@
     display: flex;
     position: relative;
 
-    .jeux_media {
+    .swiper_jeux_images {
         height: 100%;
         width: 100%;
         position: absolute;
@@ -14,46 +14,37 @@
             object-fit: cover;
         }
     }
-    .hero_content {
+    .jeux_content {
         z-index: 2;
     }
 
-    .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-
+    .info_jeux {
+        padding: var(--spacing-sm) 0 32px 0;
+        width: 35vw;
         color: var(--color-white);
-
-        .info_hero {
-            padding: var(--spacing-sm) 0 32px 0;
-            width: 35vw;
-            color: var(--color-white);
-            .hero_slogan {
-                font-size: var(--font-size-h2);
-                margin: 0;
-                padding: 24px 0;
+        .jeux_slogan {
+            font-size: var(--font-size-h2);
+            margin: 0;
+            padding: 24px 0;
+        }
+        .jeux_texte {
+            font-size: 28px;
+            margin: 0;
+            padding-bottom: 12px;
+        }
+        h1 {
+            @media screen and (max-width: 1050px) {
+                width: 70vw;
             }
-            .hero_texte {
-                font-size: 28px;
-                margin: 0;
-                padding-bottom: 12px;
-            }
-            h1 {
-                @media screen and (max-width: 1050px) {
-                    width: 70vw;
-                }
-                @media screen and (max-width: $breakpoint-sm) {
-                    width: 95vw;
-                }
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 95vw;
             }
         }
     }
 }
 
-.hero_contact {
-    .info_hero {
+.jeux_contact {
+    .info_jeux {
         h1 {
             width: 47vw;
             @media screen and (max-width: $breakpoint-sm) {
