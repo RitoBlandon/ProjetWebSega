@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .wrapper {
-    max-width: $breakpoint-lg;
+    max-width: $breakpoint-xl;
     width: calc(100% - var(--spacing-xxl));
     margin: 0 auto;
     @media screen and (max-width: $breakpoint-lg) {
