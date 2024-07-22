@@ -1,11 +1,13 @@
 .presentation {
     height: 100%;
+    width: 100%;
     background-color: #00259f;
     padding-top: 82px;
     color: var(--color-white);
     position: relative;
     .titre_presentation {
         padding: 0 0 50px 80px;
+        width: 10vw;
     }
     .image_pres {
         display: block;
@@ -16,7 +18,7 @@
     .background_image_presentation {
         position: absolute;
         top: 14.5%;
-        left: 25%;
+        left: 24%;
         z-index: 1;
     }
 
@@ -31,14 +33,14 @@
         }
 
         .segadbs_contenu {
-            width: 50vw;
+            width: 40vw;
             z-index: 2;
             h2 {
                 width: 25vw;
             }
             .sega_texte {
                 padding: 32px 0;
-                width: 60vw;
+                width: 28vw;
             }
         }
     }

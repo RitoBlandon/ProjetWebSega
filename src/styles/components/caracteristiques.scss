@@ -19,6 +19,12 @@
 
     .infos_caracteristiques {
         position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-white);
+        gap: 80px;
     }
 }
 
