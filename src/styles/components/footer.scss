@@ -22,6 +22,27 @@ footer {
             flex-direction: column;
             align-items: center;
             gap: 36px;
+            color: var(--color-white);
+
+            .footer_texte {
+                width: 35vw;
+            }
+        }
+
+        .info_lettre {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .boite_inscription {
+            display: flex;
+            justify-content: flex-start;
+            background-color: white;
+            border: 2px solid black;
+            padding: 10px 225px 10px 5px;
         }
     }
 }

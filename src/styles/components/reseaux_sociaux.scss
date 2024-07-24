@@ -6,24 +6,17 @@
     list-style: none;
     padding: 0;
     .nav-icon {
-        background-color: var(--color-gray-background);
         border-radius: 50%;
         padding: var(--spacing-sm);
         display: flex;
         align-items: center;
         justify-content: center;
 
-        background-size: 100% 220%;
-        background-image: linear-gradient(
-            to bottom,
-            rgba($color: #fff, $alpha: 0.1) 50%,
-            var(--color-black) 50%
-        );
         -webkit-transition: background-position 1s;
         -moz-transition: background-position 1s;
         transition: background-position 1s;
         svg {
-            color: var(--color-bleu-dark);
+            color: var(--color-white);
         }
         &:hover {
             background-position: 0 -90%;
