@@ -15,6 +15,10 @@
         .texte_caracteristiques {
             width: 25vw;
         }
+        @media screen and (max-width: $breakpoint-md) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .infos_caracteristiques {

@@ -14,6 +14,9 @@ footer {
 
                 object-fit: cover;
             }
+            @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+            }
         }
 
         .infos_footer {
@@ -35,6 +38,9 @@ footer {
             align-items: flex-start;
             justify-content: center;
             gap: 32px;
+            @media screen and (max-width: $breakpoint-md) {
+                align-items: center;
+            }
         }
 
         .boite_inscription {
@@ -42,7 +48,7 @@ footer {
             justify-content: flex-start;
             background-color: white;
             border: 2px solid black;
-            padding: 10px 225px 10px 5px;
+            padding: 10px 225px 10px 10px;
         }
     }
 }

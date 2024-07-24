@@ -22,6 +22,14 @@
             align-items: center;
             gap: 30px;
             color: var(--color-white);
+            @media screen and (max-width: $breakpoint-md) {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        @media screen and (max-width: $breakpoint-md) {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 
