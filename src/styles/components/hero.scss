@@ -16,6 +16,9 @@
     }
     .hero_content {
         z-index: 2;
+        @media screen and (max-width: $breakpoint-md) {
+            width: 70vw;
+        }
     }
 
     .wrapper {
@@ -30,6 +33,9 @@
             padding: var(--spacing-sm) 0 32px 0;
             width: 35vw;
             color: var(--color-white);
+            @media screen and (max-width: $breakpoint-md) {
+                width: 70vw;
+            }
             .hero_slogan {
                 font-size: var(--font-size-h2);
                 margin: 0;

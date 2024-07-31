@@ -29,6 +29,9 @@
         height: 100%;
         position: inherit;
         flex-direction: column;
+        @media screen and (max-width: $breakpoint-md) {
+            width: 70vw;
+        }
         .info_jeux {
             color: var(--color-white);
 

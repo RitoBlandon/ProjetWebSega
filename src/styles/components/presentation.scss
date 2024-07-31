@@ -26,15 +26,21 @@
         display: grid;
 
         grid-template-columns: repeat(2, 1fr);
-
+        @media screen and (max-width: $breakpoint-md) {
+            gap: 100px;
+        }
         p {
             padding-top: 15px;
             width: 28vw;
+            @media screen and (max-width: $breakpoint-md) {
+                width: 40vw;
+            }
         }
 
         .segadbs_contenu {
             width: 40vw;
             z-index: 2;
+
             h2 {
                 width: 25vw;
             }
