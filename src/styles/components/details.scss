@@ -1,11 +1,14 @@
 .details {
     height: 100%;
+    padding: 0 var(--spacing-xl) !important;
 
     h2 {
         font-size: var(--font-size-h2);
         font-family: var(--font-primary);
         margin: 0;
         width: 500px;
+        color: var(--color-black);
+        padding-bottom: 35px;
     }
 
     h4 {
@@ -30,7 +33,6 @@
         padding: var(--spacing-xl) 0;
 
         h3 {
-            padding: var(--spacing-lg) 0;
             font-weight: bolder;
             width: 550px;
             color: var(--color-black);
