@@ -66,15 +66,24 @@
         object-fit: cover;
         filter: brightness(50%);
     }
-    .info_hero {
-        h1 {
-            width: 47vw;
-            @media screen and (max-width: $breakpoint-sm) {
-                width: 90vw !important;
-            }
-        }
-        p {
-            color: var(--color-primary-light);
-        }
+
+    .wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 0 100px;
+    }
+
+    h1 {
+        color: var(--color-white);
+        font-family: var(--font-primary);
+        font-size: 90px;
+        width: 30vw;
+        text-align: right;
+
+        z-index: 3;
+    }
+    p {
+        color: var(--color-primary-light);
     }
 }
