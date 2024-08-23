@@ -20,6 +20,13 @@
         top: 14.5%;
         left: 24%;
         z-index: 1;
+        @media screen and (max-width: 1530px) {
+            left: 30%;
+            top: 25%;
+        }
+        @media screen and (max-width: 1230px) {
+            left: 50%;
+        }
     }
 
     .presentation_sega {
