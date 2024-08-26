@@ -8,6 +8,13 @@
     .titre_presentation {
         padding: 0 0 50px 80px;
         width: 10vw;
+        z-index: 3;
+        position: sticky;
+        @media screen and (max-width: $breakpoint-xs) {
+            text-align: center;
+            padding: 0;
+            width: 100%;
+        }
     }
     .image_pres {
         display: block;
@@ -15,6 +22,9 @@
         object-fit: cover;
         z-index: 3;
         position: sticky;
+        @media screen and (max-width: $breakpoint-xs) {
+            display: none;
+        }
     }
 
     .background_image_presentation {
@@ -36,8 +46,22 @@
         display: grid;
 
         grid-template-columns: repeat(2, 1fr);
+        @media screen and (max-width: $breakpoint-lg) {
+            gap: 200px;
+        }
         @media screen and (max-width: $breakpoint-md) {
             gap: 100px;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            gap: 50px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
         }
         p {
             padding-top: 15px;
@@ -45,18 +69,51 @@
             @media screen and (max-width: $breakpoint-md) {
                 width: 40vw;
             }
+            @media screen and (max-width: $breakpoint-xs) {
+                display: inline;
+                text-align: center;
+            }
         }
 
         .segadbs_contenu {
             width: 40vw;
             z-index: 2;
+            @media screen and (max-width: 854px) {
+                padding-bottom: 50px;
+            }
+            @media screen and (max-width: $breakpoint-xs) {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+            }
 
             h2 {
                 width: 25vw;
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 100%;
+                    text-align: center;
+                }
             }
             .sega_texte {
                 padding: 32px 0;
                 width: 28vw;
+                @media screen and (max-width: $breakpoint-xs) {
+                    padding: 0 30px;
+                    width: 100%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    align-items: center;
+                    p {
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
             }
         }
     }

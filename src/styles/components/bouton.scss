@@ -34,4 +34,8 @@
     padding: 24px 30px;
     font-size: 20px;
     border-radius: 25px;
+
+    @media screen and (max-width: $breakpoint-md) {
+        padding: 14px 20px;
+    }
 }
