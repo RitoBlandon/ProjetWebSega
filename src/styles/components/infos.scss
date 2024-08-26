@@ -7,6 +7,9 @@
     h1 {
         color: var(--color-white);
         padding-bottom: 140px;
+        @media screen and (max-width: $breakpoint-xs) {
+            text-align: center;
+        }
     }
     h3 {
         font-weight: bold;

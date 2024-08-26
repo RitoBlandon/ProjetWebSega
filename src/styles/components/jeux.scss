@@ -7,6 +7,11 @@
         color: var(--color-white);
         position: fixed;
         padding: 80px 0 0 80px;
+        @media screen and (max-width: $breakpoint-xs) {
+            width: 100%;
+            padding: 50px 0 0 0;
+            text-align: center;
+        }
     }
 
     .swiper_jeux_images {
@@ -31,6 +36,10 @@
         flex-direction: column;
         @media screen and (max-width: $breakpoint-md) {
             width: 70vw;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            text-align: center;
+            align-items: center;
         }
         .info_jeux {
             color: var(--color-white);

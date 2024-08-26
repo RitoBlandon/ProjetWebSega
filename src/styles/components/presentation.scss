@@ -10,7 +10,7 @@
         width: 10vw;
         z-index: 3;
         position: sticky;
-        @media screen and (max-width: $breakpoint-xs) {
+        @media screen and (max-width: 650px) {
             text-align: center;
             padding: 0;
             width: 100%;
@@ -22,7 +22,7 @@
         object-fit: cover;
         z-index: 3;
         position: sticky;
-        @media screen and (max-width: $breakpoint-xs) {
+        @media screen and (max-width: 650px) {
             display: none;
         }
     }
@@ -55,7 +55,7 @@
         @media screen and (max-width: $breakpoint-sm) {
             gap: 50px;
         }
-        @media screen and (max-width: $breakpoint-xs) {
+        @media screen and (max-width: 650px) {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -69,7 +69,7 @@
             @media screen and (max-width: $breakpoint-md) {
                 width: 40vw;
             }
-            @media screen and (max-width: $breakpoint-xs) {
+            @media screen and (max-width: 650px) {
                 display: inline;
                 text-align: center;
             }
@@ -81,7 +81,7 @@
             @media screen and (max-width: 854px) {
                 padding-bottom: 50px;
             }
-            @media screen and (max-width: $breakpoint-xs) {
+            @media screen and (max-width: 650px) {
                 width: 100%;
                 height: 100%;
                 display: flex;
@@ -93,7 +93,7 @@
 
             h2 {
                 width: 25vw;
-                @media screen and (max-width: $breakpoint-xs) {
+                @media screen and (max-width: 650px) {
                     width: 100%;
                     text-align: center;
                 }
@@ -101,6 +101,19 @@
             .sega_texte {
                 padding: 32px 0;
                 width: 28vw;
+                @media screen and (max-width: 650px) {
+                    padding: 0 30px;
+                    width: 100%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    align-items: center;
+                    p {
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
                 @media screen and (max-width: $breakpoint-xs) {
                     padding: 0 30px;
                     width: 100%;
