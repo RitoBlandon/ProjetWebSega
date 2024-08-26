@@ -13,19 +13,22 @@
         display: block;
         height: 100%;
         object-fit: cover;
+        z-index: 3;
+        position: sticky;
     }
 
     .background_image_presentation {
+        height: 100%;
+        width: 100%;
         position: absolute;
-        top: 14.5%;
-        left: 24%;
-        z-index: 1;
-        @media screen and (max-width: 1530px) {
-            left: 30%;
-            top: 25%;
-        }
-        @media screen and (max-width: 1230px) {
-            left: 50%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        img {
+            width: 100vw;
+            height: 100%;
+            display: block;
+            object-fit: cover;
         }
     }
 
