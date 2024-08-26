@@ -1,7 +1,5 @@
-.videos_promo {
+.video_jeux {
     height: 100%;
-    padding: 100px 0;
-
     h2 {
         text-align: center;
     }
@@ -26,11 +24,16 @@
         color: var(--color-white);
         text-align: center;
         height: 0;
-        padding-bottom: 56.25%;
+        padding-bottom: 38%;
         position: relative;
         cursor: pointer;
         z-index: 3;
-
+        @media screen and (max-width: 1920px) {
+            padding-bottom: 47%;
+        }
+        @media screen and (max-width: $breakpoint-md) {
+            padding-bottom: 5%;
+        }
         img {
             object-fit: cover;
             height: 100%;

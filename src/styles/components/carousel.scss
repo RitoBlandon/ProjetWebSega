@@ -1,4 +1,4 @@
-.swiper-actu {
+.swiper {
     max-width: 100%;
     max-height: 100vh;
 
@@ -35,5 +35,13 @@
 
     .swiper-slide {
         width: fit-content;
+        height: fit-content;
+    }
+}
+
+.swiper-videos {
+    .swiper-slide {
+        width: fit-content;
+        height: fit-content;
     }
 }
