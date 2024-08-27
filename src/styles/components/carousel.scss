@@ -1,13 +1,14 @@
-.swiper_actu {
+.swiper_videos {
     max-width: 100%;
-    max-height: 100vh;
 
     min-height: 0;
     min-width: 0;
     display: block;
     flex-shrink: 0;
     width: auto;
+    height: 100%;
     margin: 0;
+    object-fit: cover;
     @media screen and (max-width: $breakpoint-md) {
         width: 267px;
         height: 286px;
@@ -43,7 +44,7 @@
     }
 }
 
-.swiper-videos {
+.swiper-v {
     .swiper-slide {
         width: fit-content;
         height: fit-content;
