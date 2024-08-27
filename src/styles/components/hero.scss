@@ -88,6 +88,10 @@
         text-align: right;
 
         z-index: 3;
+        @media screen and (max-width: $breakpoint-lg) {
+            width: 70vw;
+            font-size: 60px;
+        }
     }
     p {
         color: var(--color-primary-light);
