@@ -3,6 +3,9 @@
     display: flex;
 
     position: relative;
+    h1 {
+        color: var(--color-white);
+    }
     .titre_jeux {
         color: var(--color-white);
         position: fixed;
@@ -42,8 +45,6 @@
             align-items: center;
         }
         .info_jeux {
-            color: var(--color-white);
-
             .jeux_slogan {
                 font-size: var(--font-size-h2);
                 margin: 0;

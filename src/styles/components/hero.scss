@@ -18,6 +18,7 @@
     }
     .hero_content {
         z-index: 2;
+
         @media screen and (max-width: $breakpoint-md) {
             width: 70vw;
         }
