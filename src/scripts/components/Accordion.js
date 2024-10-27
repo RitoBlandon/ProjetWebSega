@@ -1,48 +1,55 @@
 export default class Accordion {
   constructor(element) {
     this.element = element;
-    this.accordions = this.element.querySelectorAll('.js-accordion');
+    this.accordions = this.element.querySelectorAll('.js-accordion'); // Sélectionne tous les éléments d'accordéon
     this.options = {
-      notClosing: false,
-      autoOpen: false,
+      notClosing: false, // Par défaut, les autres accordéons se ferment quand un nouvel accordéon est ouvert
+      autoOpen: false, // Par défaut, les accordéons ne s'ouvrent pas automatiquement
     };
 
-    this.html = document.documentElement;
-    this.init();
+    this.html = document.documentElement; // Récupère l'élément <html>
+    this.init(); // Appelle la méthode d'initialisation
   }
 
+  // Initialise les options et ajoute des écouteurs d'événements
   init() {
-    this.setOptions();
-    this.autoOpenAccordions = this.element.querySelectorAll('[data-auto-open]');
+    this.setOptions(); // Configure les options en fonction des attributs de données
+    this.autoOpenAccordions = this.element.querySelectorAll('[data-auto-open]'); // Sélectionne les accordéons avec 'data-auto-open'
 
+    // Boucle à travers chaque élément d'accordéon
     for (let i = 0; i < this.accordions.length; i++) {
       const element = this.accordions[i];
-      element.addEventListener('click', this.onToggleAccordion.bind(this));
+      element.addEventListener('click', this.onToggleAccordion.bind(this)); // Ajoute un écouteur de clic à chaque accordéon
       if (element.dataset.autoOpen != undefined) {
-        element.classList.add('is-active');
+        element.classList.add('is-active'); // Si 'data-auto-open' est présent, ouvre l'accordéon par défaut
       }
     }
   }
+
+  // Configure les options en fonction des attributs de données de l'élément parent
   setOptions() {
     if ('notClosing' in this.element.dataset) {
-      this.options.notClosing = true;
+      this.options.notClosing = true; // Active l'option notClosing si 'data-not-closing' est présent
     }
   }
-  onToggleAccordion(event) {
-    const accordionCliquer = event.currentTarget;
 
+  // Gère l'ouverture/fermeture des accordéons
+  onToggleAccordion(event) {
+    const accordionCliquer = event.currentTarget; // Récupère l'accordéon cliqué
+
+    // Boucle à travers chaque accordéon pour gérer l'état 'is-active'
     for (let i = 0; i < this.accordions.length; i++) {
       const accordion = this.accordions[i];
-      // On vien vérifier si l'index de l'accordion dans la boucle est le meme que celui cliquer
 
+      // Vérifie si l'accordéon actuel est celui cliqué
       if (accordionCliquer == accordion) {
-        accordion.classList.toggle('is-active');
+        accordion.classList.toggle('is-active'); // Active ou désactive l'accordéon cliqué
       } else if (
-        !this.options.notClosing &&
-        accordion.classList.contains('is-active') &&
-        this.autoOpenAccordions.length <= 1
+        !this.options.notClosing && // Si l'option notClosing est désactivée
+        accordion.classList.contains('is-active') && // Si l'accordéon est actuellement actif
+        this.autoOpenAccordions.length <= 1 // Vérifie qu'il y a au plus un accordéon avec autoOpen
       ) {
-        accordion.classList.remove('is-active');
+        accordion.classList.remove('is-active'); // Ferme l'accordéon actuellement actif
       }
     }
   }
